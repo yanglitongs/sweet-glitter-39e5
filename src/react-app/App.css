@@ -90,3 +90,12 @@
   padding: 1em;
   font-size: 0.9em;
 }
+.content section {
+  min-height: calc(100vh - 200px); /* 视口高度减去头部和底部高度的估算 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 1em;
+  box-sizing: border-box;
+}
+
