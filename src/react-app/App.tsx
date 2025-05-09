@@ -1,5 +1,5 @@
 // src/App.tsx
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
 const TABS = ["公司使命", "核心服务", "智能硬件", "平台规划", "关于我们", "联系方式"];
