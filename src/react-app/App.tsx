@@ -59,8 +59,8 @@ function App() {
 
         <Section title="联系方式" id="contact">
           <p>官网地址：<a href="https://ibamboos.dpdns.org/">ibamboos.dpdns.org</a></p>
-          <p>联系邮箱：<a href="mailto:contact@ibamboos.dpdns.org">contact@ibamboos.dpdns.org</a></p>
-          <p>微信客服：敬请扫码添加</p>
+          <p>联系邮箱：<a href="mailto:yanglt@ibamboos.dpdns.org">Yanglt@ibamboos.dpdns.org</a></p>
+          <p>微信客服：yanglitongs</p>
         </Section>
       </main>
 
