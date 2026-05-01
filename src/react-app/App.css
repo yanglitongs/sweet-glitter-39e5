@@ -65,9 +65,21 @@
   font-weight: 700;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.language-toggle:hover {
   color: #075f3e;
   background: #e7f3ed;
+}
+
+.language-toggle {
+  min-height: 2.35rem;
+  padding: 0.45rem 0.72rem;
+  border: 1px solid rgba(11, 111, 73, 0.22);
+  border-radius: 0.45rem;
+  color: #0b6f49;
+  background: #ffffff;
+  cursor: pointer;
+  font-weight: 900;
 }
 
 main {
@@ -264,7 +276,8 @@ h3 {
 .scenario-card,
 .contact-card,
 .faq-item,
-.layer-card {
+.layer-card,
+.case-card {
   border: 1px solid rgba(23, 35, 31, 0.1);
   border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.84);
@@ -282,6 +295,7 @@ h3 {
 .scenario-card p,
 .faq-item p,
 .layer-card p,
+.case-card p,
 .contact-section p {
   color: #53675f;
   line-height: 1.78;
@@ -388,6 +402,53 @@ h3 {
 
 .matrix-section {
   padding-top: 0;
+}
+
+.case-section {
+  border-top: 1px solid rgba(23, 35, 31, 0.08);
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.case-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 27rem;
+  padding: 1.35rem;
+}
+
+.case-region {
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.55rem;
+  border-radius: 0.35rem;
+  color: #17436d;
+  background: #e5f0fb;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.case-card strong {
+  display: block;
+  margin-top: auto;
+  padding-top: 1rem;
+  color: #17352b;
+  line-height: 1.65;
+}
+
+.case-card a {
+  margin-top: 1rem;
+  color: #0b6f49;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.case-card a:hover {
+  color: #17436d;
 }
 
 .capability-table {
@@ -565,6 +626,7 @@ h3 {
 @media (max-width: 1080px) {
   .service-grid,
   .architecture-grid,
+  .case-grid,
   .process-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -617,6 +679,7 @@ h3 {
   .hero-dashboard,
   .service-grid,
   .architecture-grid,
+  .case-grid,
   .scenario-grid,
   .process-list {
     grid-template-columns: 1fr;
@@ -630,7 +693,8 @@ h3 {
   .scenario-card,
   .process-list li,
   .faq-item,
-  .layer-card {
+  .layer-card,
+  .case-card {
     min-height: auto;
   }
 
